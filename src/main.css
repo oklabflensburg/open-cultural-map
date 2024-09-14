@@ -171,11 +171,11 @@ html, body {
 }
 
 #map {
-  height: calc(40vh -  2.5rem);
+  height: calc(40vh - 2.5rem);
 }
 
 @media (width >= 768px) {
   #map, #filter {
-    height: calc(100vh -  2.5rem);
+    height: calc(100vh - 2.5rem);
   }
 }

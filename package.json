@@ -15,6 +15,9 @@
     "lint": "pnpm run lint:js && pnpm run lint:css && pnpm run lint:html"
   },
   "dependencies": {
+    "@eslint/eslintrc": "^3.1.0",
+    "@eslint/js": "^9.10.0",
+    "globals": "^15.9.0",
     "leaflet": "^1.9.4",
     "parcel": "^2.12.0"
   },
