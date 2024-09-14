@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html prefix="og: https://ogp.me/ns#" lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Stadtplan der Kulturnacht Flensburg</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:title" content="Stadtplan der Kulturnacht Flensburg">
+    <meta property="og:site_name" content="Stadtplan der Veranstaltungsorte der Kulturnacht Flensburg">
+    <meta property="og:url" content="https://map.kulturnachtflensburg.de">
+    <meta property="og:description" content="Stadtplan der Veranstaltungsorte der Kulturnacht Flensburg am 14. September 2024! Von 17 bis 23 Uhr öffnen 24 Kultureinrichtungen ihre Türen für exklusive Einblicke, Konzerte, Workshops und Mitmach-Aktionen.">
+    <meta property="og:type" content="website">
+    <meta content="Stadtplan der Veranstaltungsorte der Kulturnacht Flensburg am 14. September 2024! Von 17 bis 23 Uhr öffnen 24 Kultureinrichtungen ihre Türen für exklusive Einblicke, Konzerte, Workshops und Mitmach-Aktionen." name="description">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+    <div class="h-screen overflow-auto bg-slate-50">
+        <div class="md:flex">
+            <div class="w-full sm:w-8/12 md:w-7/12 lg:w-9/12 h-96 overflow-hidden" id="map"></div>
+            <div class="w-full sm:w-4/12 md:w-5/12 lg:w-3/12 sm:overflow-scroll bg-knf-light" id="filter">
+                <div class="leading-normal lg:text-lg lg:mb-3 mx-3 rounded text-knf-darkblue text-md hidden" id="details">
+                    <div id="detailImage"></div>
+                    <ul class="pt-3" id="detailList"></ul>
+                </div>
+                <div class="text-knf-darkblue mt-3 md:mt-6 py-2 px-3" id="about">
+                    <img src="knf_logo_2024.svg" class="">
+                    <h3 class="font-bold text-xl md:text-2xl mb-1">Was ist die Kulturnacht?</h3>
+                    <p class="font-normal leading-normal text-md lg:text-lg mb-3 md:mb-6">Am 14. September 2024 von 17 bis 23 Uhr laden die Flensburger Kulturakteure zur Kulturnacht Flensburg ein. Möglichst viele Orte und Richtungen des kulturellen Wirkens in Flensburg werden in dieser Nacht ihre Türen öffnen und in ihrer Einzigartigkeit und Gesamtheit präsentieren. Von Theaterstücken, einem Blick hinter die Kulissen, Konzerten, kreativen Mit-Mach-Aktionen oder gemeinsamen Gesprächen und Miteinander - für alle ist etwas dabei. Die Kulturakteure werden für euch die Türen öffnen und ihr könnt staunen und lernen, mitmachen und begeistert werden! </p>
+                    <p class="font-normal leading-normal text-md lg:text-lg mb-3 md:mb-6">Einen Überblick aller beteiligten Akteure findet ihr auf der interaktiven Karte.</p>
+                </div>
+            </div>
+        </div>
+        <footer class="bg-gray-200 h-10 border-t md:border-t border-gray-300 text-sm flex justify-center items-center">
+            <a class="inline-block text-gray-700 hover:text-blue-800 focus:text-blue-800" href="./impressum.html">Impressum</a> <span class="inline-block text-gray-700 px-3">|</span> <a class="inline-block text-gray-700 hover:text-blue-800 focus:text-blue-800" href="./impressum.html#privacy">Datenschutzerklärung</a> <span class="inline-block text-gray-700 px-3">|</span> <a class="inline-block text-gray-700 hover:text-blue-800 focus:text-blue-800" href="./lizenz.html">Lizenz</a>
+        </footer>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
