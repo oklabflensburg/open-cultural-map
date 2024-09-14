@@ -1,5 +1,10 @@
 # Kulturnacht Flensburg
 
+[![Lint css files](https://github.com/oklabflensburg/open-cultural-map/actions/workflows/lint-css.yml/badge.svg)](https://github.com/oklabflensburg/open-cultural-map/actions/workflows/lint-css.yml)
+[![Lint html files](https://github.com/oklabflensburg/open-cultural-map/actions/workflows/lint-html.yml/badge.svg)](https://github.com/oklabflensburg/open-cultural-map/actions/workflows/lint-html.yml)
+[![Lint js files](https://github.com/oklabflensburg/open-cultural-map/actions/workflows/lint-js.yml/badge.svg)](https://github.com/oklabflensburg/open-cultural-map/actions/workflows/lint-js.yml)
+[![Lighthouse CI](https://github.com/oklabflensburg/open-cultural-map/actions/workflows/lighthouse.yml/badge.svg)](https://github.com/oklabflensburg/open-cultural-map/actions/workflows/lighthouse.yml)
+
 ![Screenshot Kulturnacht Flensburg](https://raw.githubusercontent.com/oklabflensburg/open-cultural-map/main/screenshot_kulturkarte.webp)
 
 
