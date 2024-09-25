@@ -119,8 +119,7 @@ osmGeocoder.on('markgeocode', (e) => {
 
 function fetchBlob(url, alt) {
   fetch(url, {
-    method: 'get',
-    mode: 'no-cors'
+    method: 'get'
   }).then((response) => {
     if (response.ok) {
       response.blob().then((blob) => {
@@ -1558,7 +1557,7 @@ function marker(data) {
     },
     pointToLayer(feature, latlng) {
       const eventId = feature.properties.event_id
-      const eventTitle = feature.properties.event_title
+      const venueName = feature.properties.venue_name
 
       const icon = L.divIcon({
         html: `<div class="flex justify-center items-center w-8 h-8 rounded-full font-bold text-center text-lg text-knf-darkblue bg-knf-light focus:text-knf-light focus:bg-knf-pink hover:text-knf-light hover:bg-knf-pink transition-all duration-300 border-0" role="button" tabindex="${eventId}">${eventId}</div>`,
@@ -1568,7 +1567,9 @@ function marker(data) {
         tooltipAnchor: [0, -17]
       })
 
-      return L.marker(latlng, { icon }).bindTooltip(eventTitle, {
+      return L.marker(latlng, {
+        icon
+      }).bindTooltip(venueName, {
         permanent: false,
         direction: 'top'
       }).openTooltip()

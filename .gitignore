@@ -1,11 +1,12 @@
+dist/
+venv/
 .parcel-cache/
 node_modules/
-coverage/
-venv/
-dist/
+__MACOSX/
 .DS_Store
 .env
 .idea
+*.zip
 *.tgz
 *.suo
 *.local
