@@ -103,6 +103,24 @@ deactivate
 ```
 
 
+## Download locations
+
+Download POIs der Touristischen Landesdatenbank Schleswig-Holstein
+
+```
+psql -U oklab -h localhost -d oklab -p 5432 < data/kulturorte_schema.sql
+```
+
+```
+cd tools
+python3 -m venv venv
+source venv/bin/activate
+pip3 install -r requirements.txt
+python3 location_downloader.py --url https://opendata.schleswig-holstein.de/dataset/37ce8a8f-abe7-4db4-ba08-5cf6dc659188/resource/c715326c-88d4-40b7-88c6-00ab3544eb10/download/poi.json.gz --table sh_poi --env ../.env --verbose
+deactivate
+```
+
+
 ## LICENSE
 
 [CC0-1.0](LICENSE)
