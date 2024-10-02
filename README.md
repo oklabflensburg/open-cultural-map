@@ -116,7 +116,7 @@ cd tools
 python3 -m venv venv
 source venv/bin/activate
 pip3 install -r requirements.txt
-python3 location_downloader.py --url https://opendata.schleswig-holstein.de/dataset/37ce8a8f-abe7-4db4-ba08-5cf6dc659188/resource/c715326c-88d4-40b7-88c6-00ab3544eb10/download/poi.json.gz --table sh_poi --env ../.env --verbose
+python3 location_downloader.py --url https://opendata.schleswig-holstein.de/dataset/37ce8a8f-abe7-4db4-ba08-5cf6dc659188/resource/5f210cbf-c23c-4717-a7fc-365b65129525/download/poi.json.gz --table sh_poi --env ../.env --verbose
 deactivate
 ```
 

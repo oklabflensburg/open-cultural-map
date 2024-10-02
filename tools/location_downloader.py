@@ -133,9 +133,13 @@ def fetch_data(url):
     download_path = Path(f'/tmp/{url_path}')
 
     save_download(download_path, data)
-    target_path = decompress_gz_file(download_path)
 
-    data = load_data(target_path)
+    if get_mime_type(download_path) == 'application/gzip':
+        file_path = decompress_gz_file(download_path)
+    else:
+        file_path = download_path
+
+    data = load_data(file_path)
 
     return data
 
@@ -322,10 +326,12 @@ def main(env, url, table, verbose, debug):
         try:
             cur.execute(sql, (regions_joined, updated_at, website, meta_title, meta_description,
             phone, street, city, postal_code, housenumber, title, description, wkb_geometry))
+
+            last_inserted_id = cur.fetchone()[0]
+
+            log.info(f'inserted {title} with id {last_inserted_id}')
         except UniqueViolation as e:
             log.error(e)
-
-            return
 
 
 
