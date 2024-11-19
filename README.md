@@ -121,6 +121,22 @@ deactivate
 ```
 
 
+## Kultur Förderung Flensburg
+
+```sh
+psql -U oklab -h localhost -d oklab -p 5432 < data/kultur_zuschuesse_schema.sql
+```
+
+```sh
+cd tools
+python3 -m venv venv
+source venv/bin/activate
+pip3 install -r requirements.txt
+python3 insert_budget_csv.py --env ../.env --src ../data/flensburg_kultur_zuschuesse_2008.csv --verbose
+deactivate
+```
+
+
 ## LICENSE
 
 [CC0-1.0](LICENSE)
